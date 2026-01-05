@@ -4,5 +4,5 @@ jobs:
   first_job:
     runs-on: ubuntu-latest
     steps:
-      - name: echo hello
+      - name: hello
       - run: echo "hello"
