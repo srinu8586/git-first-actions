@@ -11,3 +11,9 @@ jobs:
           uname -a
           lsb_release -a || true
           cat /etc/os-release
+       - name: Storage Details
+         run: |
+         ls -l
+         pwd
+         du -sh .
+         df -h .
