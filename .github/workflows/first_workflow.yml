@@ -6,3 +6,8 @@ jobs:
     steps:
       - name: hello
         run: echo "hello"
+      - name: Show Os Details
+        run: |
+          uname -a
+          lsb_release -a || true
+          cat /etc/os-release
