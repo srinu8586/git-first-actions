@@ -1,19 +1,20 @@
 name: my_first_workflow
 on: workflow_dispatch
+
 jobs:
   first_job:
     runs-on: ubuntu-latest
     steps:
       - name: hello
         run: echo "hello"
-      - name: Show Os Details
+      - name: Show OS Details
         run: |
           uname -a
           lsb_release -a || true
           cat /etc/os-release
-       - name: Storage Details
-         run: |
-         ls -l
-         pwd
-         du -sh .
-         df -h .
+      - name: Storage Details
+        run: |
+          ls -l
+          pwd
+          du -sh .
+          df -h .
